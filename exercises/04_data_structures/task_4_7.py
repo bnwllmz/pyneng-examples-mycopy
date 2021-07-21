@@ -16,3 +16,7 @@ this stage it is difficult otherwise test the result.
 """
 
 mac = "AAAA:BBBB:CCCC"
+hexmac = int(mac.replace(':',''), 16)
+
+binmac = "{:b}".format(hexmac)
+print(binmac)
